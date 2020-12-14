@@ -7,7 +7,7 @@ web-ui
 
  
  content  ==> HTML
- style    ==> CSS
+ style    ==> CSS / SCSS
  behavior ==> javascript
 
 
@@ -20,6 +20,19 @@ what .js-lang can do on HTML-page in browser envi?
 
 using browser provided web-APIs,
 JavaScript-lang can bring any dynamic activity/data to web-page
+
+How JS Works on browser and non browser environment?
+
+Browser environment
+--------------------------
+1. V8 Engine - Chrome Browser
+2. Chakra - IE
+3. Firefox - Spider Monkey
+
+Non browser environment
+-------------------------
+. Node.js - V8 Engine
+
 
 
 browser-APIs :  ==> are based on 'w3c' recommendations,
@@ -313,7 +326,7 @@ problems/limitations with plain-js ( your-code ) with browser-apis
 
 
         1. react.js    from facebook       : v17 
-        2. Angular     from google-team    : v10
+        2. Angular     from google-team    : v11
         3. Vue.js
         4. Ember.js
         5. Aurelia.js
@@ -327,16 +340,7 @@ problems/limitations with plain-js ( your-code ) with browser-apis
         -----------------------------------------------------
 
 
-=======================================================================
-Facebook (Partially)
-Instagram (Completely)
-Khan Academy (Partially)
-Codecademy (Partially)
-New York Times (Partially)
-Yahoo Mail (Completely)
-Dropbox’s new photo and video gallery app Carousel (Completely)
-Vivaldi Browser
-WhatsApp Web
+
 ========================================================================
 
 
@@ -351,12 +355,7 @@ WhatsApp Web
         
          
 
-        
-
-        from facebook, we got command-line tool
-
-                - create-react-app cli tool
-        
+       
 
         --------------------------------------------
 
@@ -369,27 +368,8 @@ WhatsApp Web
 
         on workspace directory
 
-        > create-react-app <app-name>
 
-        > cd app-name
-
-        > npm start | yarn start
-
-        --------------------------------------------
-
-        React topics
-        ------------------
-        
-        component's
-
-        - props & state
-        - life-cycle
-        - data-flow b/w components
-        - context
-        - container components
-        
-        - HOC ( Higher Order Component) pattern
-
-        ---------------------------------------------
+   Angular CLI:
+   -------------------
 
 
