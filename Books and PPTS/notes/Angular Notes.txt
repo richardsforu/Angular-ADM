@@ -1,0 +1,20 @@
+1. src/main.ts
+2. /app/app.module.ts
+
+app.module.ts
+----------------------
+Major 3 parts
+1. declarations: All CustomComponents (Component which you have created) should be declared
+2. imports: All built-in and user-defined modules which is going to b used in the app, should be declared
+3.providers:(optional) All Service classes which is enjectable (Dependency Injection) should be declared 
+4.bootstrap: Component sequence executed by angular at the time of starting the server
+
+
+CLI Commands
+---------------------------------
+ng new my-app
+npm install bootstrap --save
+ng generate component greet
+ng generate component product
+
+
