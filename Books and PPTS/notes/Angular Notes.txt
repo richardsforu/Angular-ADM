@@ -12,9 +12,39 @@ Major 3 parts
 
 CLI Commands
 ---------------------------------
+creating new angular app
 ng new my-app
-npm install bootstrap --save
+adding libraries to the anguklar app
+npm install bootstrap,jquery --save 
+
+Start Server
+ng serve --open or ng serve  or ng s or npm start
+Generating new component
 ng generate component greet
-ng generate component product
+ng generate component product 
+
+
+
+data binding
+----------------
+3 ways of binding
+
+1. Property binding [ ]
+2. Event binding ( )
+3. Two way binding [(ngModel)]
+
+
+3. Two way binding [(ngModel)]
+----------------------------------
+-> by default disbled
+-> to enable 2-way binding, include forms module in the application
+-> forms module shoukd be added in the app.module.ts file in the app folder
+
+
+
+
+
+
+
 
 

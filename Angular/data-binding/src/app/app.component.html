@@ -1,0 +1,62 @@
+<div class="container">
+  <h1 [style.color]=textColor>Angular Data Binding</h1>
+  <hr />
+
+  Hide Div: <input type="checkbox" value="...Something...." (change)="testCheckBox($event)" />
+  <div [hidden]=hideDiv>
+    <h1>Div Data</h1>
+  </div>
+  <hr />
+
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div>
+        <img [src]=imagePath1 class="border rounded">
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div>
+        <img [src]=imagePath2 class="border rounded">
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <div>
+
+    <input (blur)=testFun($event) [readonly]=disableEditing type="text" name="userName" />
+
+  </div>
+
+  <br /> <br />
+
+  <button (click)=testFun($event)>Click Here</button>
+  <br />
+  Male <input type="radio" name="gen" value="Male" (change)=testFun($event)>
+  Female <input type="radio" name="gen" value="Female" (change)=testFun($event)>
+
+  <hr/>
+
+  Select Course:
+  <select (change)="testFun($event)">
+    <option value="0">--Select One--</option>
+    <option value="BSC">BSC</option>
+    <option value="MSC">MSC</option>
+    <option value="DSC">DSC</option>
+    <option value="HSC">HSC</option>
+    <option value="LSC">LSC</option>
+  </select>
+
+  <hr/>
+
+
+  <input type="text" name="cityName" [(ngModel)]="cityName"/>
+  <br/>
+  <h4>City Name: {{cityName}}</h4>
+
+
+</div>
+
+

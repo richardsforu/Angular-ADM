@@ -1,0 +1,103 @@
+<div class='container'>
+
+  <h1>Angular Directives</h1>
+  <hr />
+
+  <h2>Two Types</h2>
+  <ol>
+    <li>
+      Structutal directives
+      <ol>
+        <li>ngIf</li>
+        <li>ngFor</li>
+        <li>ngSwitch</li>
+
+      </ol>
+    </li>
+    <li>Attribute directives</li>
+  </ol>
+
+  <hr />
+
+  <div [hidden]=hideDiv>
+    <h2>Div Content - 1 </h2>
+  </div>
+
+  <hr />
+
+  Hide/Unhide: <input checked type="checkbox" (change)="toggleDivView($event)" />
+  <div *ngIf=showDiv>
+    <h2>Div Content - 2 </h2>
+  </div>
+
+  <hr />
+
+  <div>
+    <ol>
+      <li *ngFor="let city of cities">
+        {{city}}
+      </li>
+    </ol>
+  </div>
+
+  <hr />
+
+
+
+  <div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Product Image</th>
+          <th>Product ID</th>
+          <th>Product Category</th>
+          <th>Product Name</th>
+
+          <th>In Stock</th>
+          <th>Product Price</th>
+          <th>Sale Price</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+          <td>
+            <img [src]=product.productImage height="100" width="100" />
+          </td>
+          <td class="align-middle">{{product.productId}}</td>
+          <td class="align-middle">{{product.productCategory}}</td>
+          <td class="align-middle">{{product.productName}}</td>
+          <td class="align-middle">{{product.productStock}}</td>
+          <td class="align-middle"> {{product.productPrice}}</td>
+          <td class="align-middle">{{product.salePrice}}</td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+  <div>
+
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th>City Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let city of cities">
+          <td>{{city}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+
+
+</div>
