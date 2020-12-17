@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">APP Component</div>
+    <div class="card-body">
+      <h2>APP Component</h2>
+      <hr />
+
+      <div class="text-center">
+        <button (click)="greetMessage('Good Morning')">Good Morming</button>
+        <button (click)="greetMessage('Good Afternoon')">Good Afternoon</button>
+        <button (click)="greetMessage('Good Evening')">Good Evening</button>
+
+      </div>
+
+    </div>
+  </div>
+
+  <hr width="50%" />
+
+  <!-- <app-greet message="Good Morning" p1="This is Property One" [n1]=n1 [n2]=n2></app-greet> -->
+
+  <app-greet [message]=message [n1]=2000 [n2]=3000> </app-greet>
+
+  <hr />
+
+  <div class="row">
+  <div class="col-3">
+    <app-buttons btnLabel="Home"></app-buttons>
+  </div>
+  <div class="col-3">
+    <app-buttons btnLabel="About US"></app-buttons>
+  </div>
+  <div class="col-3">
+    <app-buttons btnLabel="Products"></app-buttons>
+  </div>
+  <div class="col-3">
+    <app-buttons btnLabel="Login"></app-buttons>
+  </div>
+  <div class="col-3">
+    <app-buttons btnLabel="Load"></app-buttons>
+  </div>
+
+</div>
+
+  <hr />
+
+  <div class="row">
+
+    <div *ngFor="let btnLabel of numbers" class="col-12 col-md-2 mt-2">
+      <app-buttons btnLabel={{btnLabel}}></app-buttons>
+    </div>
+
+  </div>
+
+
+
+</div>
