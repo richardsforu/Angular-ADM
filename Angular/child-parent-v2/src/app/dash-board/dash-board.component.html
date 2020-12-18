@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="alert alert-info text-center">
+        <h1>ABC Corp Dashboard</h1>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-header">Counter APP</div>
+                <div class="card-body">
+                    <app-buttons (totalCountSummary)=displayTotalCount($event) [buttons]=buttons></app-buttons>
+                </div>
+                <div class="card-footer text-center">
+                    <app-summary [totalCount]=totalCount></app-summary>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-6">
+            <app-product></app-product>
+        </div>
+    </div>
+
+
+</div>

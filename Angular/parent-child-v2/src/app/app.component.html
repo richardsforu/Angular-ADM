@@ -1,14 +1,24 @@
 <div class="container">
-  <h1>Counter APP - V1</h1> <hr/>
+  <h1>Counter APP - V1</h1>
+  <hr />
 
- 
-  <div class="row">
 
-    <div *ngFor="let btnLabel of buttons" class="col-3 mt-3">
-      <app-buttons btnLabel={{btnLabel}}></app-buttons>
+  <div class="card">
+    <div class="card-header">Counter App</div>
+    <div class="card-body">
+      <div class="row">
+
+        <div *ngFor="let btnLabel of buttons" class="col-3 mt-3">
+          <app-buttons btnLabel={{btnLabel}}></app-buttons>
+        </div>
+      </div>
+
     </div>
-
+    <div class="card-footer text-center">
+      <h2>Total Count: 0</h2>
+    </div>
   </div>
+
 
 
 
