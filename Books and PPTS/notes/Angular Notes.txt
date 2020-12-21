@@ -42,6 +42,19 @@ data binding
 
 
 
+Pipes: formating template date : 2 types
+1. Built in pipes
+2. User defined pipes
+
+
+1. Built in pipes
+-------------------
+
+a. date
+    date, shortDate, fullDate, custom-formating
+
+    
+
 
 
 

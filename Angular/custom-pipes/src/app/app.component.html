@@ -1,0 +1,68 @@
+<div class="container">
+  <h1>Custom Pipes</h1>
+  <hr />
+
+
+
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-4">
+          <div class="form-group">
+            <label for=""><b>Sort By</b></label>
+
+            <select class="form-control" (change)="selectedFilter($event)">
+              <option value="id">ID</option>
+              <option value="first_name">First Name</option>
+              <option value="last_name">Last Name</option>
+              <option value="email">Email</option>
+              <option value="gender">Gender</option>
+              <option value="mobile">Mobile</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="">Filter</label>
+            <input type="text" class="form-control" />
+          </div>
+        </div>
+
+        <div class="col-4">
+
+        </div>
+
+        <div class="col-4">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1>{{filterBy}}</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>Mobile Number</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr *ngFor="let employee of employees | employeeFilter:'first_name':'asc' ">
+
+        <td>{{employee.id}}</td>
+        <td>{{employee.first_name | uppercase}}</td>
+        <td>{{employee.last_name}}</td>
+        <td>{{employee.email}}</td>
+        <td>{{employee.gender}}</td>
+        <td>{{employee.mobile }}</td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>
