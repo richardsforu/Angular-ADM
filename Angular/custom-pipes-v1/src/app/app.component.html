@@ -1,0 +1,43 @@
+<div class="container">
+  <h1>Welcome</h1>
+  <hr />
+
+  <div>
+
+    <input type="text" [(ngModel)]="searchTerm" name="searchTerm" placeholder="Search">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>First Name
+            <i appSortParams (param)="setSortParams($event)" class="bi bi-sort-alpha-up" id="firstAsc"></i>
+            <i appSortParams (param)="setSortParams($event)" class="bi bi-sort-alpha-down" id="firstDesc"></i>
+          </th>
+          <th>Last Name
+            <i appSortParams (param)="setSortParams($event)" class="fa fa-arrow-up" id="lastAsc"></i>
+            <i appSortParams (param)="setSortParams($event)" class="fa fa-arrow-down" id="lastDesc"></i>
+          </th>
+          <th>Age
+            <i appSortParams (param)="setSortParams($event)" class="fa fa-arrow-up" id="ageAsc"></i>
+            <i appSortParams (param)="setSortParams($event)" class="fa fa-arrow-down" id="ageDesc"></i>
+          </th>
+          <th>Email
+            <i appSortParams (param)="setSortParams($event)" class="fa fa-arrow-up" id="emailAsc"></i>
+            <i appSortParams (param)="setSortParams($event)" class="fa fa-arrow-down" id="emailDesc"></i>
+          </th>
+        </tr>
+      </thead>
+      <tr *ngFor="let x of users | filter:searchTerm">
+        <td>{{x.title}}</td>
+        <td>{{x.first}}</td>
+        <td>{{x.last}}</td>
+        <td>{{x.age}}</td>
+        <td>{{x.email}}</td>
+      </tr>
+    </table>
+
+  </div>
+
+
+
+</div>

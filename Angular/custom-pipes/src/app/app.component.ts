@@ -13,7 +13,8 @@ export class AppComponent {
 
   employees = EMPLOYEES;
   filterBy: string = '';
-  
+  filterContent: string = '';
+
 
   selectedFilter(formField: any) {
     this.filterBy = formField.target.value;

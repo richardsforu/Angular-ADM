@@ -11,7 +11,7 @@
           <div class="form-group">
             <label for=""><b>Sort By</b></label>
 
-            <select class="form-control" (change)="selectedFilter($event)">
+            <select class="form-control" [(ngModel)]="filterBy">
               <option value="id">ID</option>
               <option value="first_name">First Name</option>
               <option value="last_name">Last Name</option>
@@ -22,7 +22,7 @@
           </div>
           <div class="form-group">
             <label for="">Filter</label>
-            <input type="text" class="form-control" />
+            <input placeholder="Search by First Name" type="text" [(ngModel)]="filterContent"  class="form-control" />
           </div>
         </div>
 
@@ -36,7 +36,6 @@
       </div>
     </div>
   </div>
-  <h1>{{filterBy}}</h1>
   <table class="table">
     <thead>
       <tr>
@@ -51,7 +50,7 @@
 
     <tbody>
 
-      <tr *ngFor="let employee of employees | employeeFilter:'first_name':'asc' ">
+      <tr *ngFor="let employee of employees | employeeFilter:filterBy:'asc' | dataFilter:filterContent ">
 
         <td>{{employee.id}}</td>
         <td>{{employee.first_name | uppercase}}</td>
