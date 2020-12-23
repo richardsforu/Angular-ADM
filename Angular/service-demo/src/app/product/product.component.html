@@ -1,0 +1,77 @@
+<div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>{{product.id}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.description}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr/>
+
+
+    <input (keyup)="findProduct($event)" type="text" name="id" placeholder="id" autocomplete="off"/>
+
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                <tr>
+                    <td>{{product.id}}</td>
+                    <td>{{product.name}}</td>
+                    <td>{{product.price}}</td>
+                    <td>{{product.description}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <hr/>
+
+    <input (keyup)="findProducts($event)" type="text" name="id" placeholder="Product name" autocomplete="off"/>
+
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+    
+            <tbody>
+                <tr *ngFor="let product of filteredList">
+                    <td>{{product.id}}</td>
+                    <td>{{product.name}}</td>
+                    <td>{{product.price}}</td>
+                    <td>{{product.description}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</div>
