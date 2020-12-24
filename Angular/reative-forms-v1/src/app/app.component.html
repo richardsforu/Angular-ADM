@@ -1,0 +1,77 @@
+<div class="container">
+  <h1>Angular Reactive Forms</h1>
+  <hr/>
+
+  <div class="col-5">
+    <form novalidate [formGroup]="flightBookForm" (ngSubmit)="handleSubmit()" autocomplete="off">
+
+      <div class="mb-2">
+        <label for="">Form</label>
+        <input formControlName=origin  class="form-control" name="origin"/>
+        <span *ngIf="isSubmitted && fc.origin.errors?.required" class='text-danger'>
+          Origin is required
+        </span>
+        <span *ngIf="isSubmitted && fc.origin.errors?.minlength" class='text-danger'>
+           Length should be minimum 3 characters long
+        </span>
+      </div>
+
+      <div class="mb-2">
+        <label for="">To</label>
+        <input formControlName=destination class="form-control"/>
+        <span *ngIf="isSubmitted && fc.destination.errors?.required" class='text-danger'>
+          Destination is required
+        </span>
+      </div>
+
+      <div class="mb-2">
+        <label for="">Departure</label>
+        <input formControlName=flightDate class="form-control"/>
+        <span *ngIf="isSubmitted && fc.flightDate.errors?.required" class='text-danger'>
+          Date is required
+        </span>
+        <span class="text-danger" *ngIf=" isSubmitted && fc.flightDate.errors?.invalidDate">
+          Invalid Date. Should be DD/MM/YYYY format
+        </span>
+      </div>
+
+      <div class="mb-2">
+        <label for="">Number of Passengers</label>
+        <input formControlName=numberofPassengers class="form-control"/>
+        <span *ngIf="isSubmitted && fc.numberofPassengers.errors?.required" class='text-danger'>
+          Passenger Count is required
+        </span>
+      </div>
+
+      <div class="mb-2">
+        <label for="">Pincode</label>
+        <input formControlName=pinCode class="form-control"/>
+        <span *ngIf="isSubmitted && fc.pinCode.errors?.required" class='text-danger'>
+          Pincode  is required
+        </span>
+
+        <span class="text-danger" *ngIf=" isSubmitted && fc.pinCode.errors?.pattern">
+          Invalid pincode number.
+        </span>
+      </div>
+
+      <div class="mb-2">
+        <label for="">Password</label>
+        <input type="password" formControlName=password class="form-control"/>
+        <span *ngIf="isSubmitted && fc.password.errors?.required" class='text-danger'>
+          Pincode  is required
+        </span>
+
+        <span class="text-danger" *ngIf=" isSubmitted && fc.password.errors?.invalidPassword">
+          Invalid Password. min 8 letters with one upper case, 1 lower case and any special symbol.
+        </span>
+      </div>
+
+
+      <div class="mb-2 text-center">
+        <button  class="btn btn-primary">Search</button>
+      </div>
+    </form>
+  </div>
+
+</div>

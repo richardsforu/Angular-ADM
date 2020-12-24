@@ -47,13 +47,24 @@ Pipes: formating template date : 2 types
 2. User defined pipes
 
 
-1. Built in pipes
--------------------
 
-a. date
-    date, shortDate, fullDate, custom-formating
+
+Reactive Forms:
+------------------
+Define ReactiveFormsModule in the app.module.ts file
+
+1. Creating FormGroup
+2. FormBuilder is a built in service class in Angular
+
+touched
+pristine
+dirty
+
+
 
     
+
+
 
 
 

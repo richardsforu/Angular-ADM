@@ -55,6 +55,9 @@ export class ProductService {
   // 3. Find By Name
   findByName(name: string): Array<Product> {
     console.log(name);
-    return this.products.filter((product, idx) => product.name === name)
+    if (!name) {
+      return null;
+    }
+    return this.products.filter((product, idx) => product.name.toString().indexOf(name) > -1)
   }
 }
