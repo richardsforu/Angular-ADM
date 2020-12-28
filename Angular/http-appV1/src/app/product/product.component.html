@@ -1,0 +1,14 @@
+<div>
+    <table class="table table-bordered">
+        <tbody>
+            <tr *ngFor="let prod of products">
+                <td>{{prod.id}}
+                <td>{{prod.name}}
+                <td>{{prod.price}}
+                <td>{{prod.description}}
+                <td> <a href='Edit'>Edit</a></td>
+                <td> <a href='http://localhost:8080/product'>Delete</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
