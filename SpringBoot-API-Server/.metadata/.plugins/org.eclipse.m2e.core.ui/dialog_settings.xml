@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/Users/praveen/Training/Cognizant/adm-boot-b2/spring-ws/14-boot-RestAPI-DB"/>
 			<item value="/Users/praveen/Training/Cognizant/ADM-Springboot/boot-ws"/>
 			<item value="/Users/praveen/Training/Cognizant/Emblem-boot/Boot/boot-ws/7-boot-rest-app"/>
 		</list>

@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="alert alert-info text-center">
+      <h1>SPA Application with Angular Router</h1>
+    </div>
+
+    <hr />
+
+    <div class="col-2 bg-info">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" [routerLink]="'home'">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'about-us'">About US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'product-form'">Product Form</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'products'">Products</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-10">
+
+      <router-outlet>
+      </router-outlet>
+
+    </div>
+
+  </div>
+
+
+</div>

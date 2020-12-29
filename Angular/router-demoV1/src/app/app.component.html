@@ -1,0 +1,46 @@
+<div class="container">
+  <h1>SPA with Routing</h1>
+  <hr />
+
+
+  <div class="row">
+
+    <div class="col-2">
+
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a [routerLink]="'/home'" class="nav-link">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a [routerLink]="'/about-us'" class="nav-link">About US-V1</a>
+
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="'/myproducts'" class="nav-link">Products</a>
+
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="'/our_projects'" class="nav-link">Projects</a>
+
+        </li>
+      </ul>
+
+    </div>
+
+
+    <div class="col-10">
+
+      <router-outlet>
+
+      </router-outlet>
+
+    </div>
+
+  </div>
+
+
+
+
+
+</div>
