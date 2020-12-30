@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ProductService } from '../product.service';
-import { Router } from '@angular/router'
+import { ActivatedRoute, Router } from '@angular/router'
 
 @Component({
   selector: 'app-product-form',
@@ -12,9 +12,18 @@ export class ProductFormComponent implements OnInit {
 
   productForm: FormGroup;
   isSubmited = false;
-  constructor(private ps: ProductService, private fb: FormBuilder, private router: Router) { }
+  isAddMode: boolean;
+
+  constructor(private ps: ProductService, private fb: FormBuilder, private router: Router, private route: ActivatedRoute) { }
 
   handleSubmit() {
+
+    if (this.isAddMode) {
+      this.saveProduct();
+    } else {
+      this.editProduct()
+    }
+    /*
     this.isSubmited = true;
     console.log(this.productForm.value);
 
@@ -24,13 +33,41 @@ export class ProductFormComponent implements OnInit {
         this.router.navigate(['/products'])
       })
     }
+    */
   }
 
+
+  saveProduct() {
+
+    if (this.productForm.valid) {
+      this.ps.saveProduct(this.productForm.value).subscribe(response => {
+        console.log(response);
+        this.router.navigate(['/products'])
+      })
+    }
+
+  }
+
+  editProduct() {
+    if (this.productForm.valid) {
+      this.ps.updateProduct(this.productForm.value).subscribe(response => {
+        console.log(response);
+        this.router.navigate(['/products'])
+      })
+    }
+  }
   get fc() {
     return this.productForm.controls;
   }
 
   ngOnInit(): void {
+    let id = null;
+    this.route.paramMap.subscribe((params => {
+      this.isAddMode = !params.get('pid');
+      id = params.get('pid');
+    }))
+
+
 
     this.productForm = this.fb.group({
       id: [, [Validators.required]],
@@ -39,6 +76,11 @@ export class ProductFormComponent implements OnInit {
       description: [, [Validators.required]],
     })
 
+    if (!this.isAddMode) {
+      this.ps.findProductById(id).subscribe(product => {
+        this.productForm.patchValue(product);
+      })
+    }
 
   }
 

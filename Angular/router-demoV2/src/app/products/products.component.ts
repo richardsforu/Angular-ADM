@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ProductService } from '../product.service';
 
 @Component({
@@ -8,7 +9,22 @@ import { ProductService } from '../product.service';
 })
 export class ProductsComponent implements OnInit {
 
-  constructor(private ps: ProductService) { }
+  constructor(private ps: ProductService, private router: Router) { }
+
+  editProduct(product) {
+    console.log(product);
+    this.router.navigate(['product-form', product.id])
+  }
+
+  deleteProduct(id) {
+    console.log("--- deleting product with id " + id);
+    this.ps.deleteProduct(id);
+    console.log('product with id ' + id + ' is deleted..');
+    this.router.navigate(['home'])
+
+
+
+  }
 
   products = [];
   ngOnInit(): void {

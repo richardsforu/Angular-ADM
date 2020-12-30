@@ -16,7 +16,7 @@ export class ProductService {
   }
 
   public requestOptions = {
-    headers: new HttpHeaders(this.headerDict), 
+    headers: new HttpHeaders(this.headerDict),
   };
 
   //load all products
@@ -32,7 +32,7 @@ export class ProductService {
   //save Product
   saveProduct(product) {
     console.log(product);
-    return this.http.post(this.baseUrl, JSON.stringify(product),this.requestOptions);
+    return this.http.post(this.baseUrl, JSON.stringify(product), this.requestOptions);
   }
 
   //delete Product
