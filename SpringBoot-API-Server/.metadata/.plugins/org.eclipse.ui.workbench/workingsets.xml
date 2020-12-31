@@ -5,5 +5,9 @@
 <workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1609128685566_3" label="14-boot-RestAPI-DB" name="14-boot-RestAPI-DB">
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/14-boot-RestAPI-DB" type="4"/>
 </workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1609388369655_4" label="8-Flight-BootAPP" name="8-Flight-BootAPP"/>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1609388470610_5" label="PSS-REST" name="PSS-REST">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/PSS-REST" type="4"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1608782430081_2" label="Window Working Set" name="Aggregate for window 1608782430080"/>
 </workingSetManager>
