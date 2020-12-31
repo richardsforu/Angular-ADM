@@ -423,3 +423,58 @@
 2020-12-31 09:51:13,743 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2020-12-31 09:51:13,749 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-12-31 09:51:13,750 [Worker-63: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/praveen/Training/Cognizant/Microservices-B2/Microservices-WS/PSS-REST/src/test/resources
+2020-12-31 10:00:58,227 [Worker-67: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cts:Microservices-Website:1 @ /Users/praveen/Training/Cognizant/Microservices-B1/Microservices-WS/Microservices-Website/pom.xml.
+2020-12-31 10:00:58,668 [Worker-67: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Microservices-Website/src/main/java
+2020-12-31 10:00:58,668 [Worker-67: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Microservices-Website/src/main/resources
+2020-12-31 10:00:58,668 [Worker-67: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Microservices-Website/src/main/resources
+2020-12-31 10:00:58,669 [Worker-67: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Microservices-Website/src/test/java
+2020-12-31 10:00:58,804 [Worker-67: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2020-12-31 10:00:59,481 [Worker-71: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-31 10:00:59,481 [Worker-71: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-12-31 10:00:59,483 [Worker-71: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2020-12-31 10:00:59,498 [Worker-71: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-31 10:00:59,498 [Worker-71: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/praveen/Training/Cognizant/Microservices-B1/Microservices-WS/Microservices-Website/src/test/resources
+2020-12-31 10:04:19,340 [Worker-74: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cts:1-Fare-Service:1 @ /Users/praveen/Training/Cognizant/Microservices-B1/Microservices-WS/1-Fare-Service/pom.xml.
+2020-12-31 10:04:19,623 [Worker-74: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /1-Fare-Service/src/main/java
+2020-12-31 10:04:19,623 [Worker-74: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /1-Fare-Service/src/main/resources
+2020-12-31 10:04:19,623 [Worker-74: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /1-Fare-Service/src/main/resources
+2020-12-31 10:04:19,624 [Worker-74: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /1-Fare-Service/src/test/java
+2020-12-31 10:04:19,793 [Worker-74: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2020-12-31 10:04:20,531 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-31 10:04:20,532 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-12-31 10:04:20,534 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-31 10:04:20,536 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-31 10:04:20,536 [Worker-74: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/praveen/Training/Cognizant/Microservices-B1/Microservices-WS/1-Fare-Service/src/test/resources
+2020-12-31 10:04:55,999 [Worker-72: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cts:2-FlightSearch-Service:1 @ /Users/praveen/Training/Cognizant/Microservices-B1/Microservices-WS/2-FlightSearch-Service/pom.xml.
+2020-12-31 10:04:56,271 [Worker-72: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /2-FlightSearch-Service/src/main/java
+2020-12-31 10:04:56,271 [Worker-72: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /2-FlightSearch-Service/src/main/resources
+2020-12-31 10:04:56,272 [Worker-72: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /2-FlightSearch-Service/src/main/resources
+2020-12-31 10:04:56,272 [Worker-72: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /2-FlightSearch-Service/src/test/java
+2020-12-31 10:04:56,390 [Worker-72: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2020-12-31 10:04:57,211 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-31 10:04:57,212 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-12-31 10:04:57,214 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-31 10:04:57,216 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-31 10:04:57,217 [Worker-73: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/praveen/Training/Cognizant/Microservices-B1/Microservices-WS/2-FlightSearch-Service/src/test/resources
+2020-12-31 10:05:33,630 [Worker-77: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cts:3-FlightBooking-Service:1 @ /Users/praveen/Training/Cognizant/Microservices-B1/Microservices-WS/3-FlightBooking-Service/pom.xml.
+2020-12-31 10:05:33,944 [Worker-77: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /3-FlightBooking-Service/src/main/java
+2020-12-31 10:05:33,944 [Worker-77: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /3-FlightBooking-Service/src/main/resources
+2020-12-31 10:05:33,944 [Worker-77: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /3-FlightBooking-Service/src/main/resources
+2020-12-31 10:05:33,944 [Worker-77: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /3-FlightBooking-Service/src/test/java
+2020-12-31 10:05:34,195 [Worker-77: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2020-12-31 10:05:34,995 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-31 10:05:34,996 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-12-31 10:05:35,002 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-31 10:05:35,005 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-31 10:05:35,005 [Worker-77: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/praveen/Training/Cognizant/Microservices-B1/Microservices-WS/3-FlightBooking-Service/src/test/resources
+2020-12-31 10:05:57,782 [Worker-78: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.cts:4-Checkin-Service:1 @ /Users/praveen/Training/Cognizant/Microservices-B1/Microservices-WS/4-Checkin-Service/pom.xml.
+2020-12-31 10:05:58,032 [Worker-78: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /4-Checkin-Service/src/main/java
+2020-12-31 10:05:58,033 [Worker-78: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /4-Checkin-Service/src/main/resources
+2020-12-31 10:05:58,033 [Worker-78: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /4-Checkin-Service/src/main/resources
+2020-12-31 10:05:58,033 [Worker-78: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /4-Checkin-Service/src/test/java
+2020-12-31 10:05:58,198 [Worker-78: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2020-12-31 10:05:58,851 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-31 10:05:58,852 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-12-31 10:05:58,859 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-31 10:05:58,861 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-31 10:05:58,861 [Worker-67: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/praveen/Training/Cognizant/Microservices-B1/Microservices-WS/4-Checkin-Service/src/test/resources
